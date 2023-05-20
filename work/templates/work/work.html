@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Works
+{% endblock %}
+
+
+{% block body %}
+<h1>Project list</h1>
+<div class="works">
+{% for x in works %}
+<div class="work" >
+<h2><a href="{% url 'work:d_work' slug=x.slug %}">{{x.caption}}</a></h2>
+<p>{{x.snippet}}</p>
+<p>{{x.date}}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

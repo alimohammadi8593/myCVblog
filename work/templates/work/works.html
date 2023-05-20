@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% for work in work %}
+{% block title %}
+{{work.caption}}
+{% endblock %}
+
+{% block body %}
+<h1>{{work.caption}}</h1>
+<div class="work" >
+<p>{{work.body}}</p>
+<video class="embed-responsive embed-responsive-16by9" controls="controls">
+    <source src="{{work.video.url}}" type="video/mp4">
+</video>
+<p>create on {{work.date}}</p>
+</div>
+{% endblock %}
+{% endfor %}

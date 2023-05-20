@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+<div class="home" >
+<h1>Welcome</h1>
+<nav>
+    <li><a href="{% url 'work:work' %}">My work</a></li>
+    <li><a href="{% url 'about:about' %}">About me</a></li>
+    <li><a href="{% url 'connect' %}">Content to me</a></li>
+</nav>
+</div>
+{% endblock %}

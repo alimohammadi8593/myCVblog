@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About me
+{% endblock %}
+
+{% block body %}
+<h1>Who is me?!</h1>
+<div class="about" >
+<h3>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id dolorum veniam pariatur voluptatem repellat delectus recusandae rem! Excepturi, harum quos molestias similique quas ex natus vitae autem? Incidunt, a.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id dolorum veniam pariatur voluptatem repellat delectus recusandae rem! Excepturi, harum quos molestias similique quas ex natus vitae autem? Incidunt, a.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id dolorum veniam pariatur voluptatem repellat delectus recusandae rem! Excepturi, harum quos molestias similique quas ex natus vitae autem? Incidunt, a.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id dolorum veniam pariatur voluptatem repellat delectus recusandae rem! Excepturi, harum quos molestias similique quas ex natus vitae autem? Incidunt, a.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id dolorum veniam pariatur voluptatem repellat delectus recusandae rem! Excepturi, harum quos molestias similique quas ex natus vitae autem? Incidunt, a.
+</h3>
+{% for x in image %}
+<img src="{{x.image.url}}" alt="">
+{% endfor %}
+</div>
+{% endblock %}
